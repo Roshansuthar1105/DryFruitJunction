@@ -25,7 +25,7 @@ export default function OrdersPage() {
 
     return matchesStatus && matchesSearch;
   });
-
+  filteredOrders.reverse();
   return (
     <div className="bg-white rounded-2xl shadow-lg p-6">
       <div className="sticky top-0 z-10 bg-white pt-4 pb-4 -mt-6 -mx-6 px-6 border-b border-gray-200">

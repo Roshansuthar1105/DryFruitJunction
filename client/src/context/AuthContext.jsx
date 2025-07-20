@@ -33,7 +33,7 @@ export const AuthProvider = ({ children }) => {
   const login = async (email, password) => {
     try {
       const response = await axios.post(`${BACKEND_API}/api/auth/login`, { email, password });
-      toast.success("Logged In Successfully !")
+      // toast.success("Logged In Successfully !")
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('user', JSON.stringify(response.data.user));
       setUser(response.data.user);

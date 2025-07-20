@@ -259,7 +259,7 @@ export default function UserDashboard() {
                       <div key={order._id} className="border border-gray-200 rounded-lg p-4 md:p-6">
                         <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-3 md:mb-4 gap-2">
                           <div>
-                            <h3 className="font-bold text-gray-800 text-sm md:text-base">Order #{order._id.slice(-6)}</h3>
+                            <h3 className="font-bold text-gray-800 text-sm md:text-base">Order #{order.orderNumber}</h3>
                             <p className="text-xs md:text-sm text-gray-500">
                               {new Date(order.createdAt).toLocaleDateString()}
                             </p>

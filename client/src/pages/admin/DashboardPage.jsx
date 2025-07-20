@@ -4,6 +4,7 @@ import DataCard from '../../components/admin/DataCard.jsx';
 import { Users, ShoppingBag, Mail, Activity, DollarSign, Package, CheckCircle, Truck } from 'lucide-react';
 import { Bar, Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement } from 'chart.js';
+import { useEffect } from 'react';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement);
 
@@ -12,7 +13,10 @@ export default function DashboardPage() {
   const { data: orders, loading: ordersLoading } = useAdminData('orders');
   const { data: contacts, loading: contactsLoading } = useAdminData('contacts');
   const { data: activities, loading: activitiesLoading } = useAdminData('activities');
-  
+  // useEffect(() => {
+  //   console.log("correct",orders);
+  //   console.log("reverse",orders.reverse());
+  // }, [orders]);
   // Calculate additional stats
   const totalSales = orders.reduce((sum, order) => sum + (order.totalPrice || 0), 0);
   const completedOrders = orders.filter(order => order.orderStatus === 'delivered').length;
@@ -146,7 +150,7 @@ export default function DashboardPage() {
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
-                {orders.slice(0, 5).map(order => (
+                {orders.reverse().slice(0, 5).map(order => (
                   <tr key={order._id}>
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                       #{order.orderNumber || order._id.slice(-6)}
