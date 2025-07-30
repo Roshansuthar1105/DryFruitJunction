@@ -10,6 +10,7 @@ import { toast } from "react-hot-toast";
 const ProductPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { clearCart,fetchCart } = useCart()
   const { addToCart } = useCart();
   const [product, setProduct] = useState(null);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
@@ -83,7 +84,17 @@ const ProductPage = () => {
       console.error('Error adding to cart:', err);
     }
   };
-
+  const handlebuynow = async ()=>{
+    clearCart();
+    setTimeout(()=>{
+      handleAddToCart();
+      fetchCart();
+      // navigate('/checkout');
+    },2000)
+    setTimeout(()=>{
+      navigate('/checkout');
+    },3000)
+  }
   const renderStars = (rating) => {
     const stars = [];
     const fullStars = Math.floor(rating);
@@ -282,9 +293,11 @@ const ProductPage = () => {
                   <ShoppingCart className="w-5 h-5" />
                   Add to Cart
                 </button>
-                <button className="cursor-pointer border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-pink-500 hover:text-pink-600 transition-all duration-300">
-                  <Heart className="w-5 h-5 inline mr-2" />
-                  Wishlist
+                <button className="cursor-pointer border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-pink-500 hover:text-pink-600 transition-all duration-300"
+                  onClick={handlebuynow}
+                >
+                  
+                  Buy Now
                 </button>
               </div>
 

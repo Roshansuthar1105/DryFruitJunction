@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
-              <img src="logo.png" alt="Logo" width={40} height={40} />
+              <img src="/logo.png" alt="Logo" width={40} height={40} />
               {/* <div className="bg-gradient-to-r from-pink-500 to-pink-700 p-2 rounded-full">
                 <Heart className="h-6 w-6 text-white" />
               </div> */}
@@ -71,7 +71,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Our Sweets</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/products/6856ca7e1e56cf367abff549" className="text-gray-400 hover:text-pink-400 transition-colors">
+                <Link to="/products/6856c4911e56cf367abff3f1" className="text-gray-400 hover:text-pink-400 transition-colors">
                   Kaju Katli
                 </Link>
               </li>
@@ -81,7 +81,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/products/6856c4911e56cf367abff3f1" className="text-gray-400 hover:text-pink-400 transition-colors">
+                <Link to="/products/6856ca7e1e56cf367abff549" className="text-gray-400 hover:text-pink-400 transition-colors">
                   Strawberry Kaju Katli
                 </Link>
               </li>

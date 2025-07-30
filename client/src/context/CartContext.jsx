@@ -181,7 +181,8 @@ export const CartProvider = ({ children }) => {
       removeFromCart,
       clearCart,
       cartTotal,
-      cartCount
+      cartCount,
+      fetchCart
     }}>
       {children}
     </CartContext.Provider>

@@ -347,7 +347,7 @@ export default function UserDashboard() {
                   <div className="text-center py-8 md:py-12">
                     <Heart className="mx-auto h-10 w-10 md:h-12 md:w-12 text-gray-400" />
                     <h3 className="mt-3 md:mt-4 text-base md:text-lg font-medium text-gray-900">No favorites yet</h3>
-                    <p className="mt-1 md:mt-2 text-sm md:text-base text-gray-500">Save your favorite products here</p>
+                    <p className="mt-1 md:mt-2 text-sm md:text-base text-gray-500">We are working on this feature.</p>
                   </div>
                 )}
               </div>

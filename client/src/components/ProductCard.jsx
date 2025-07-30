@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 
 export default function ProductCard({ product }) {
   const { addToCart } = useCart();
-  const { isFavorite, toggleFavorite } = useFavorites();
   const { user } = useAuth();
   const [selectedVariant, setSelectedVariant] = useState(
     product.variants?.[0]?._id || null
@@ -38,15 +37,6 @@ export default function ProductCard({ product }) {
             {product.category}
           </span>
         </div>
-        <button
-          onClick={() => user ? toggleFavorite(product) : null}
-          className={`absolute top-3 right-3 p-2 cursor-pointer rounded-full transition-all ${isFavorite(product._id)
-              ? 'bg-pink-100 text-pink-600 shadow-sm'
-              : 'bg-white/90 backdrop-blur-sm text-gray-500 hover:bg-pink-50 hover:text-pink-500'
-            }`}
-        >
-          <Heart className={`h-4 w-4 ${isFavorite(product._id) ? 'fill-pink-600' : ''}`} />
-        </button>
       </div>
 
       <div className="p-5 flex flex-col gap-3">

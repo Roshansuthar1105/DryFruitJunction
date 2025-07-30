@@ -18,7 +18,7 @@ export default function Header() {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-              <img src="logo.png" alt="Logo" width={40} height={40} />
+              <img src="/logo.png" alt="Logo" width={40} height={40} />
             {/* <div className="bg-gradient-to-r from-pink-500 to-orange-500 p-2 rounded-full">
               <Heart className="h-6 w-6 text-white" />
             </div> */}
