@@ -78,7 +78,6 @@ export default function CheckoutPage() {
       if (response.status === 201) {
         toast.success("Order Conformed");
         setOrderData(response.data); // Save full response
-        console.log(response.data); // Save full response
         setOrderSuccess(true);
         clearCart();
       }

@@ -36,7 +36,6 @@ const ProductPage = () => {
         setLoading(true);
         const response = await axios.get(`${BACKEND_API}/api/products/${id}`);
         setProduct(response.data);
-        console.log(response.data)
         setSelectedVariant(response.data.variants?.[0]?._id || null);
         setLoading(false);
 
