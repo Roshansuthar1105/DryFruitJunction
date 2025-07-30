@@ -7,7 +7,7 @@ import { toast } from 'react-hot-toast'
 import axios from 'axios'
 
 export default function CheckoutPage() {
-  const { cart, cartTotal, clearCart } = useCart()
+  const { cart, cartTotal, clearCart,fetchCart } = useCart()
   const { user } = useAuth()
   const [orderData, setOrderData] = useState(null);
   const [formData, setFormData] = useState({
@@ -29,6 +29,7 @@ export default function CheckoutPage() {
   const [orderSuccess, setOrderSuccess] = useState(false)
   useEffect(() => {
     fetchLocation();
+    fetchCart();
   }, []);
   useEffect(() => {
     if (user) {
@@ -77,6 +78,7 @@ export default function CheckoutPage() {
       if (response.status === 201) {
         toast.success("Order Conformed");
         setOrderData(response.data); // Save full response
+        console.log(response.data); // Save full response
         setOrderSuccess(true);
         clearCart();
       }
