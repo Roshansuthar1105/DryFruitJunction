@@ -35,7 +35,7 @@ export default function AdminLayout() {
   }, [sidebarOpen]);
 
   return (
-    <div className="flex h-screen bg-gradient-to-br from-pink-50 to-orange-50 p-2">
+    <div className="flex h-screen bg-gradient-to-br from-orange-50 to-orange-50 p-2">
       {/* Mobile menu button */}
       <button
         onClick={toggleSidebar}

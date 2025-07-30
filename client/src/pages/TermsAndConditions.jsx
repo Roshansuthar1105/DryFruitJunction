@@ -27,7 +27,7 @@ export const TermsAndConditions = () => (
         <ul className="space-y-6">
             {termsList.map((term, idx) => (
                 <li key={idx} className="bg-white p-4 shadow rounded-lg">
-                    <h3 className="text-lg font-semibold text-pink-700 mb-1">{term.title}</h3>
+                    <h3 className="text-lg font-semibold text-orange-700 mb-1">{term.title}</h3>
                     <p className="text-gray-700 text-sm">{term.description}</p>
                 </li>
             ))}

@@ -140,13 +140,13 @@ const ProductPage = () => {
   }
   return (
     <>
-      <section className="relative py-12 overflow-hidden bg-gradient-to-br from-pink-50 to-orange-50">
+      <section className="relative py-12 overflow-hidden bg-gradient-to-br from-orange-50 to-orange-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <button
             onClick={() => navigate(-1)}
-            className="cursor-pointer group mb-8 flex items-center gap-2 text-gray-600 transition-colors duration-200 hover:text-pink-600"
+            className="cursor-pointer group mb-8 flex items-center gap-2 text-gray-600 transition-colors duration-200 hover:text-orange-600"
           >
-            <ArrowLeft className="w-5 h-5 group-hover:text-pink-600" />
+            <ArrowLeft className="w-5 h-5 group-hover:text-orange-600" />
             <span>Back to Shop</span>
           </button>
 
@@ -169,7 +169,7 @@ const ProductPage = () => {
                   <button
                     key={image._id}
                     onClick={() => { setSelectedImageIndex(index) }}
-                    className={`cursor-pointer bg-white p-2 rounded-xl shadow-md transition-all duration-200 ${selectedImageIndex === index ? 'ring-2 ring-pink-500' : 'hover:ring-1 hover:ring-gray-300'
+                    className={`cursor-pointer bg-white p-2 rounded-xl shadow-md transition-all duration-200 ${selectedImageIndex === index ? 'ring-2 ring-orange-500' : 'hover:ring-1 hover:ring-gray-300'
                       }`}
                   >
                     <img
@@ -181,14 +181,14 @@ const ProductPage = () => {
                 ))}
               </div>
 
-              {/* <div className="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-r from-pink-400 to-orange-400 rounded-full opacity-20 blur-3xl -z-50"></div>
-          <div className="absolute -bottom-8 -left-8 w-64 h-64 bg-gradient-to-r from-purple-200 to-pink-200 rounded-full opacity-80 blur-3xl -z-50" ></div> */}
+              {/* <div className="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-r from-orange-400 to-orange-400 rounded-full opacity-20 blur-3xl -z-50"></div>
+          <div className="absolute -bottom-8 -left-8 w-64 h-64 bg-gradient-to-r from-purple-200 to-orange-200 rounded-full opacity-80 blur-3xl -z-50" ></div> */}
             </div>
 
             {/* Product Details */}
             <div className="space-y-6">
               <div>
-                <span className="inline-block px-3 py-1 text-sm font-medium bg-pink-100 text-pink-800 rounded-full">
+                <span className="inline-block px-3 py-1 text-sm font-medium bg-orange-100 text-orange-800 rounded-full">
                   {product.category}
                 </span>
                 <h1 className="text-4xl lg:text-5xl font-bold text-gray-800 mt-4">
@@ -237,7 +237,7 @@ const ProductPage = () => {
                               key={variant._id}
                               onClick={() => setSelectedVariant(variant._id)}
                               className={`px-4 py-2 rounded-full border ${selectedVariant === variant._id
-                                ? 'bg-pink-100 border-pink-500 text-pink-700'
+                                ? 'bg-orange-100 border-orange-500 text-orange-700'
                                 : 'bg-white border-gray-300 text-gray-700 hover:bg-gray-50'
                                 }`}
                             >
@@ -253,14 +253,14 @@ const ProductPage = () => {
                 <div className="flex items-center border border-gray-300 rounded-full">
                   <button
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                    className="cursor-pointer px-4 py-2 text-gray-600 hover:text-pink-600"
+                    className="cursor-pointer px-4 py-2 text-gray-600 hover:text-orange-600"
                   >
                     -
                   </button>
                   <span className="px-4 py-2">{quantity}</span>
                   <button
                     onClick={() => setQuantity(quantity + 1)}
-                    className="cursor-pointer px-4 py-2 text-gray-600 hover:text-pink-600"
+                    className="cursor-pointer px-4 py-2 text-gray-600 hover:text-orange-600"
                   >
                     +
                   </button>
@@ -286,14 +286,14 @@ const ProductPage = () => {
                   onClick={() => handleAddToCart(product, quantity, selectedVariant)}
                   disabled={currentVariant?.stock <= 0}
                   className={`cursor-pointer flex items-center justify-center gap-2 px-8 py-4 rounded-full text-lg font-semibold transition-all duration-300 transform hover:-translate-y-1 ${currentVariant?.stock > 0
-                      ? 'bg-gradient-to-r from-pink-500 to-orange-500 text-white hover:shadow-xl'
+                      ? 'bg-gradient-to-r from-orange-500 to-orange-500 text-white hover:shadow-xl'
                       : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                     }`}
                 >
                   <ShoppingCart className="w-5 h-5" />
                   Add to Cart
                 </button>
-                <button className="cursor-pointer border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-pink-500 hover:text-pink-600 transition-all duration-300"
+                <button className="cursor-pointer border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-orange-500 hover:text-orange-600 transition-all duration-300"
                   onClick={handlebuynow}
                 >
                   
@@ -304,8 +304,8 @@ const ProductPage = () => {
               <div className="pt-6 border-t border-gray-200">
                 <div className="flex flex-wrap gap-4">
                   <div className="flex items-center space-x-2">
-                    <div className="bg-pink-100 p-2 rounded-full">
-                      <Clock className="h-5 w-5 text-pink-600" />
+                    <div className="bg-orange-100 p-2 rounded-full">
+                      <Clock className="h-5 w-5 text-orange-600" />
                     </div>
                     <span className="text-gray-700">{product.preparationTime} preparation</span>
                   </div>
@@ -406,7 +406,7 @@ const ProductPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
             More from our{' '}
-            <span className="bg-gradient-to-r from-pink-600 to-orange-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-orange-600 to-orange-600 bg-clip-text text-transparent">
               {product.category}
             </span>{' '}
             collection
@@ -414,7 +414,7 @@ const ProductPage = () => {
 
           {relatedLoading ? (
             <div className="flex justify-center">
-              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-pink-500"></div>
+              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-orange-500"></div>
             </div>
           ) : relatedProducts.length > 0 ? (
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -457,7 +457,7 @@ const ProductPage = () => {
                     </div>
                     <button
                       onClick={() => navigate(`/products/${relatedProduct._id}`)}
-                      className="cursor-pointer mt-4 w-full bg-gradient-to-r from-pink-500 to-orange-500 text-white px-4 py-2 rounded-full font-medium hover:opacity-90 transition-opacity"
+                      className="cursor-pointer mt-4 w-full bg-gradient-to-r from-orange-500 to-orange-500 text-white px-4 py-2 rounded-full font-medium hover:opacity-90 transition-opacity"
                     >
                       View Details
                     </button>

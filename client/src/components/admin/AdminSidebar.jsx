@@ -89,7 +89,7 @@ export default function AdminSidebar({ user, onLinkClick, isCollapsed, toggleCol
       {/* Profile section - always visible on mobile, conditionally on desktop */}
       {(isMobile || !isCollapsed) && (
         <div className="flex items-center space-x-3 p-4 border-b border-gray-200">
-          <div className="bg-gradient-to-r from-purple-500 to-pink-500 w-10 h-10 rounded-full flex items-center justify-center">
+          <div className="bg-gradient-to-r from-purple-500 to-orange-500 w-10 h-10 rounded-full flex items-center justify-center">
             <Shield className="h-5 w-5 text-white" />
           </div>
           <div>

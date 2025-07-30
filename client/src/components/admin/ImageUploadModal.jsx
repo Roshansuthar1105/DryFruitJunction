@@ -208,7 +208,7 @@ export default function ImageUploadModal({ isOpen, onClose, product, onSuccess }
               <button
                 type="button"
                 onClick={handleSubmit}
-                className="cursor-pointer px-4 py-2 bg-gradient-to-r from-pink-500 to-orange-500 text-white rounded-md hover:shadow-md flex items-center space-x-2"
+                className="cursor-pointer px-4 py-2 bg-gradient-to-r from-orange-500 to-orange-500 text-white rounded-md hover:shadow-md flex items-center space-x-2"
                 disabled={loading}
               >
                 <Upload className="h-4 w-4" />

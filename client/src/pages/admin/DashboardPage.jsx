@@ -31,7 +31,7 @@ export default function DashboardPage() {
     { title: 'Pending Orders', value: pendingOrders, icon: Package, color: 'yellow' },
     { title: 'Shipped Orders', value: shippedOrders, icon: Truck, color: 'blue' },
     { title: 'Contact Messages', value: contacts.length, icon: Mail, color: 'orange' },
-    { title: 'Recent Activities', value: activities.length, icon: Activity, color: 'pink' },
+    { title: 'Recent Activities', value: activities.length, icon: Activity, color: 'orange' },
   ];
 
   // Prepare data for charts

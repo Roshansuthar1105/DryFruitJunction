@@ -73,7 +73,7 @@ export default function FeaturedProducts() {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
             Our Sweet{" "}
-            <span className="bg-gradient-to-r from-pink-600 to-orange-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-orange-600 to-orange-600 bg-clip-text text-transparent">
               Collection
             </span>
           </h2>
@@ -101,7 +101,7 @@ export default function FeaturedProducts() {
         {/* View All Button */}
         <div className="text-center mt-12">
           <Link to="/products">
-            <button className="cursor-pointer border-2 border-pink-500 text-pink-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-pink-500 hover:text-white transition-all duration-300">
+            <button className="cursor-pointer border-2 border-orange-500 text-orange-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-orange-500 hover:text-white transition-all duration-300">
               View All Products
             </button>
           </Link>

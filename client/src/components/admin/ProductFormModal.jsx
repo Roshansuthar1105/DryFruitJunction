@@ -412,7 +412,7 @@ export default function ProductFormModal({ isOpen, onClose, product, onSuccess, 
                 <button
                   type="button"
                   onClick={addVariant}
-                  className="cursor-pointer text-sm bg-pink-500 text-white px-3 py-1 rounded-md flex items-center"
+                  className="cursor-pointer text-sm bg-orange-500 text-white px-3 py-1 rounded-md flex items-center"
                 >
                   <Plus className="h-3 w-3 mr-1" /> Add Variant
                 </button>
@@ -533,7 +533,7 @@ export default function ProductFormModal({ isOpen, onClose, product, onSuccess, 
                 name="isActive"
                 checked={formData.isActive}
                 onChange={handleChange}
-                className="h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 rounded"
+                className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
               />
               <label className="ml-2 block text-sm text-gray-700 cursor-pointer">
                 Active Product
@@ -546,7 +546,7 @@ export default function ProductFormModal({ isOpen, onClose, product, onSuccess, 
                 name="featured"
                 checked={formData.featured}
                 onChange={handleChange}
-                className="h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 rounded"
+                className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
               />
               <label className="ml-2 block text-sm text-gray-700 cursor-pointer">
                 Featured Product
@@ -559,7 +559,7 @@ export default function ProductFormModal({ isOpen, onClose, product, onSuccess, 
                 name="isVegan"
                 checked={formData.isVegan}
                 onChange={handleChange}
-                className="h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 rounded"
+                className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
               />
               <label className="ml-2 block text-sm text-gray-700 cursor-pointer">
                 Vegan
@@ -572,7 +572,7 @@ export default function ProductFormModal({ isOpen, onClose, product, onSuccess, 
                 name="isGlutenFree"
                 checked={formData.isGlutenFree}
                 onChange={handleChange}
-                className="h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300 rounded"
+                className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
               />
               <label className="ml-2 block text-sm text-gray-700 cursor-pointer">
                 Gluten Free
@@ -649,7 +649,7 @@ export default function ProductFormModal({ isOpen, onClose, product, onSuccess, 
                 <button
                   type="button"
                   onClick={addTag}
-                  className="cursor-pointer bg-pink-500 text-white px-3 rounded-r-md"
+                  className="cursor-pointer bg-orange-500 text-white px-3 rounded-r-md"
                 >
                   <Plus className="h-4 w-4" />
                 </button>
@@ -727,7 +727,7 @@ export default function ProductFormModal({ isOpen, onClose, product, onSuccess, 
             </button>
             <button
               type="submit"
-              className="cursor-pointer px-4 py-2 bg-gradient-to-r from-pink-500 to-orange-500 text-white rounded-md hover:shadow-md flex items-center space-x-2"
+              className="cursor-pointer px-4 py-2 bg-gradient-to-r from-orange-500 to-orange-500 text-white rounded-md hover:shadow-md flex items-center space-x-2"
               disabled={loading}
             >
               <Save className="h-4 w-4" />
