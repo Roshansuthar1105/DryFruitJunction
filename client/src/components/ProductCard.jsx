@@ -33,7 +33,7 @@ export default function ProductCard({ product }) {
           />
         </Link>
         <div className="absolute top-3 left-3">
-          <span className="bg-white/90 backdrop-blur-sm text-pink-600 px-2.5 py-1 rounded-full text-xs font-semibold shadow-sm">
+          <span className="bg-white/90 backdrop-blur-sm text-orange-600 px-2.5 py-1 rounded-full text-xs font-semibold shadow-sm">
             {product.category}
           </span>
         </div>
@@ -41,7 +41,7 @@ export default function ProductCard({ product }) {
 
       <div className="p-5 flex flex-col gap-3">
         <div>
-          <Link to={`/products/${product._id}`} className="group-hover:text-pink-600 transition-colors">
+          <Link to={`/products/${product._id}`} className="group-hover:text-orange-600 transition-colors">
             <h3 className="text-lg font-semibold text-gray-900 line-clamp-1">
               {product.name}
             </h3>
@@ -60,7 +60,7 @@ export default function ProductCard({ product }) {
                   key={variant._id}
                   onClick={() => setSelectedVariant(variant._id)}
                   className={`cursor-pointer px-2.5 py-1 text-xs rounded-full border transition-colors ${selectedVariant === variant._id
-                      ? 'bg-pink-50 border-pink-300 text-pink-700'
+                      ? 'bg-orange-50 border-orange-300 text-orange-700'
                       : 'bg-gray-50 border-gray-200 text-gray-600 hover:bg-gray-100'
                     }`}
                 >
@@ -89,7 +89,7 @@ export default function ProductCard({ product }) {
           </div>
           <button
             onClick={handleAddToCart}
-            className="cursor-pointer flex items-center gap-1.5 bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-sm hover:shadow-md"
+            className="cursor-pointer flex items-center gap-1.5 bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors shadow-sm hover:shadow-md"
           >
             <ShoppingCart className="h-4 w-4" />
             <span>Add</span>

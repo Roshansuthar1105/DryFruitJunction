@@ -106,7 +106,7 @@ export default function UserDashboard() {
   };
 
   return (
-    <section className="py-8 md:py-12 bg-gradient-to-br from-pink-50 to-orange-50 min-h-screen">
+    <section className="py-8 md:py-12 bg-gradient-to-br from-orange-50 to-orange-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Mobile Menu Button */}
         <div className="md:hidden mb-6">
@@ -115,7 +115,7 @@ export default function UserDashboard() {
             className="cursor-pointer w-full flex justify-between items-center bg-white p-4 rounded-xl shadow-md"
           >
             <div className="flex items-center space-x-3">
-              <User className="h-5 w-5 text-pink-600" />
+              <User className="h-5 w-5 text-orange-600" />
               <span className="font-medium">Menu</span>
             </div>
             {mobileMenuOpen ? <ChevronUp className="h-5 w-5" /> : <ChevronDown className="h-5 w-5" />}
@@ -127,8 +127,8 @@ export default function UserDashboard() {
           {mobileMenuOpen && (
             <div className="lg:hidden bg-white rounded-2xl shadow-lg p-6">
               <div className="flex items-center space-x-4 mb-6">
-                <div className="bg-pink-100 w-10 h-10 rounded-full flex items-center justify-center">
-                  <User className="h-5 w-5 text-pink-600" />
+                <div className="bg-orange-100 w-10 h-10 rounded-full flex items-center justify-center">
+                  <User className="h-5 w-5 text-orange-600" />
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-800 text-sm">
@@ -145,7 +145,7 @@ export default function UserDashboard() {
                     setMobileMenuOpen(false)
                   }}
                   className={`cursor-pointer w-full text-left px-3 py-2 rounded-lg flex items-center space-x-3 text-sm ${activeTab === 'orders'
-                    ? 'bg-pink-50 text-pink-600'
+                    ? 'bg-orange-50 text-orange-600'
                     : 'text-gray-700 hover:bg-gray-50'
                     }`}
                 >
@@ -158,7 +158,7 @@ export default function UserDashboard() {
                     setMobileMenuOpen(false)
                   }}
                   className={`cursor-pointer w-full text-left px-3 py-2 rounded-lg flex items-center space-x-3 text-sm ${activeTab === 'favorites'
-                    ? 'bg-pink-50 text-pink-600'
+                    ? 'bg-orange-50 text-orange-600'
                     : 'text-gray-700 hover:bg-gray-50'
                     }`}
                 >
@@ -171,7 +171,7 @@ export default function UserDashboard() {
                     setMobileMenuOpen(false)
                   }}
                   className={`cursor-pointer w-full text-left px-3 py-2 rounded-lg flex items-center space-x-3 text-sm ${activeTab === 'account'
-                    ? 'bg-pink-50 text-pink-600'
+                    ? 'bg-orange-50 text-orange-600'
                     : 'text-gray-700 hover:bg-gray-50'
                     }`}
                 >
@@ -192,8 +192,8 @@ export default function UserDashboard() {
           {/* Sidebar - Desktop */}
           <div className="hidden lg:block bg-white rounded-2xl shadow-lg p-6 h-fit sticky top-6">
             <div className="flex items-center space-x-4 mb-8">
-              <div className="bg-pink-100 w-12 h-12 rounded-full flex items-center justify-center">
-                <User className="h-6 w-6 text-pink-600" />
+              <div className="bg-orange-100 w-12 h-12 rounded-full flex items-center justify-center">
+                <User className="h-6 w-6 text-orange-600" />
               </div>
               <div>
                 <h3 className="font-bold text-gray-800">
@@ -207,7 +207,7 @@ export default function UserDashboard() {
               <button
                 onClick={() => setActiveTab('orders')}
                 className={`cursor-pointer w-full text-left px-4 py-3 rounded-lg flex items-center space-x-3 ${activeTab === 'orders'
-                  ? 'bg-pink-50 text-pink-600'
+                  ? 'bg-orange-50 text-orange-600'
                   : 'text-gray-700 hover:bg-gray-50'
                   }`}
               >
@@ -217,7 +217,7 @@ export default function UserDashboard() {
               <button
                 onClick={() => setActiveTab('favorites')}
                 className={`cursor-pointer w-full text-left px-4 py-3 rounded-lg flex items-center space-x-3 ${activeTab === 'favorites'
-                  ? 'bg-pink-50 text-pink-600'
+                  ? 'bg-orange-50 text-orange-600'
                   : 'text-gray-700 hover:bg-gray-50'
                   }`}
               >
@@ -227,7 +227,7 @@ export default function UserDashboard() {
               <button
                 onClick={() => setActiveTab('account')}
                 className={`cursor-pointer w-full text-left px-4 py-3 rounded-lg flex items-center space-x-3 ${activeTab === 'account'
-                  ? 'bg-pink-50 text-pink-600'
+                  ? 'bg-orange-50 text-orange-600'
                   : 'text-gray-700 hover:bg-gray-50'
                   }`}
               >
@@ -335,8 +335,8 @@ export default function UserDashboard() {
                         <h3 className="font-bold text-gray-800 text-sm md:text-base">{product.name}</h3>
                         <p className="text-gray-600 text-xs md:text-sm mt-1 line-clamp-2">{product.description}</p>
                         <div className="mt-3 md:mt-4 flex justify-between items-center">
-                          <span className="font-bold text-pink-600 text-sm md:text-base">₹{product.price}</span>
-                          <button className="cursor-pointer text-pink-600 hover:text-pink-800">
+                          <span className="font-bold text-orange-600 text-sm md:text-base">₹{product.price}</span>
+                          <button className="cursor-pointer text-orange-600 hover:text-orange-800">
                             <Heart className="h-4 w-4 md:h-5 md:w-5 fill-current" />
                           </button>
                         </div>
@@ -378,7 +378,7 @@ export default function UserDashboard() {
                         name="currentPassword"
                         value={passwordForm.currentPassword}
                         onChange={handlePasswordChange}
-                        className="w-full px-3 py-2 md:px-4 md:py-3 border border-gray-300 rounded-lg md:rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent text-sm md:text-base"
+                        className="w-full px-3 py-2 md:px-4 md:py-3 border border-gray-300 rounded-lg md:rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent text-sm md:text-base"
                         required
                       />
                     </div>
@@ -392,7 +392,7 @@ export default function UserDashboard() {
                         name="newPassword"
                         value={passwordForm.newPassword}
                         onChange={handlePasswordChange}
-                        className="w-full px-3 py-2 md:px-4 md:py-3 border border-gray-300 rounded-lg md:rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent text-sm md:text-base"
+                        className="w-full px-3 py-2 md:px-4 md:py-3 border border-gray-300 rounded-lg md:rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent text-sm md:text-base"
                         required
                         minLength="6"
                       />
@@ -407,14 +407,14 @@ export default function UserDashboard() {
                         name="confirmPassword"
                         value={passwordForm.confirmPassword}
                         onChange={handlePasswordChange}
-                        className="w-full px-3 py-2 md:px-4 md:py-3 border border-gray-300 rounded-lg md:rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent text-sm md:text-base"
+                        className="w-full px-3 py-2 md:px-4 md:py-3 border border-gray-300 rounded-lg md:rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent text-sm md:text-base"
                         required
                         minLength="6"
                       />
                     </div>
                     <button
                       type="submit"
-                      className="cursor-pointer bg-gradient-to-r from-pink-500 to-orange-500 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg font-medium hover:shadow-md transition-all text-sm md:text-base w-full md:w-auto"
+                      className="cursor-pointer bg-gradient-to-r from-orange-500 to-orange-500 text-white px-4 py-2 md:px-6 md:py-3 rounded-lg font-medium hover:shadow-md transition-all text-sm md:text-base w-full md:w-auto"
                     >
                       Update Password
                     </button>

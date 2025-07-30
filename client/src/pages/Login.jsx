@@ -31,13 +31,13 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-pink-50 flex items-center justify-center p-8">
+    <div className="min-h-screen bg-orange-50 flex items-center justify-center p-8">
       <div className="max-w-4xl w-full bg-white rounded-lg shadow-md overflow-hidden">
         <div className="md:flex">
           {/* Left side - Brand Story */}
-          <div className="md:w-1/2 bg-gradient-to-b from-orange-50 to-pink-50 p-12 flex flex-col justify-center">
-            <h1 className="text-3xl font-serif font-bold text-pink-900 mb-6">Our Journey</h1>
-            <p className="text-pink-800 mb-6 leading-relaxed">
+          <div className="md:w-1/2 bg-gradient-to-b from-orange-50 to-orange-50 p-12 flex flex-col justify-center">
+            <h1 className="text-3xl font-serif font-bold text-orange-900 mb-6">Our Journey</h1>
+            <p className="text-orange-800 mb-6 leading-relaxed">
               From a small family kitchen in Jodhpur to serving dry fruit sweets across India,
               our journey has been about bringing back the authentic taste of traditional mithai
               with premium ingredients and no compromises.
@@ -45,20 +45,20 @@ const Login = () => {
 
             <div className="flex justify-between mt-8">
               <div className="text-center">
-                <p className="text-4xl font-bold text-pink-700">100%</p>
-                <p className="text-pink-600">Natural Ingredients</p>
+                <p className="text-4xl font-bold text-orange-700">100%</p>
+                <p className="text-orange-600">Natural Ingredients</p>
               </div>
               <div className="text-center">
-                <p className="text-4xl font-bold text-pink-700">7 Days</p>
-                <p className="text-pink-600">Pan-India Delivery</p>
+                <p className="text-4xl font-bold text-orange-700">7 Days</p>
+                <p className="text-orange-600">Pan-India Delivery</p>
               </div>
             </div>
           </div>
 
           {/* Right side - Login Form */}
           <div className="md:w-1/2 p-12">
-            <h2 className="text-2xl font-serif font-bold text-pink-900 mb-2">Welcome Back</h2>
-            <p className="text-pink-600 mb-8">Sign in to your sweet account</p>
+            <h2 className="text-2xl font-serif font-bold text-orange-900 mb-2">Welcome Back</h2>
+            <p className="text-orange-600 mb-8">Sign in to your sweet account</p>
 
             {error && (
               <div className="mb-6 p-3 bg-red-100 text-red-700 rounded-md text-sm">
@@ -68,7 +68,7 @@ const Login = () => {
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-pink-800 mb-1 cursor-pointer">
+                <label htmlFor="email" className="block text-sm font-medium text-orange-800 mb-1 cursor-pointer">
                   Email Address
                 </label>
                 <input
@@ -76,13 +76,13 @@ const Login = () => {
                   id="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-4 py-2 border border-pink-200 rounded-md focus:outline-none focus:ring-1 focus:ring-pink-500 focus:border-pink-500"
+                  className="w-full px-4 py-2 border border-orange-200 rounded-md focus:outline-none focus:ring-1 focus:ring-orange-500 focus:border-orange-500"
                   required
                 />
               </div>
 
               <div>
-                <label htmlFor="password" className="block text-sm font-medium text-pink-800 mb-1 cursor-pointer">
+                <label htmlFor="password" className="block text-sm font-medium text-orange-800 mb-1 cursor-pointer">
                   Password
                 </label>
                 <input
@@ -90,7 +90,7 @@ const Login = () => {
                   id="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full px-4 py-2 border border-pink-200 rounded-md focus:outline-none focus:ring-1 focus:ring-pink-500 focus:border-pink-500"
+                  className="w-full px-4 py-2 border border-orange-200 rounded-md focus:outline-none focus:ring-1 focus:ring-orange-500 focus:border-orange-500"
                   required
                 />
               </div>
@@ -101,15 +101,15 @@ const Login = () => {
                     id="remember-me"
                     name="remember-me"
                     type="checkbox"
-                    className="h-4 w-4 text-pink-600 focus:ring-pink-500 border-pink-300 rounded"
+                    className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-orange-300 rounded"
                   />
-                  <label htmlFor="remember-me" className="ml-2 block text-sm text-pink-700 cursor-pointer">
+                  <label htmlFor="remember-me" className="ml-2 block text-sm text-orange-700 cursor-pointer">
                     Remember me
                   </label>
                 </div>
 
                 <div className="text-sm">
-                  <Link to="/forgot-password" className="font-medium text-pink-600 hover:text-pink-500">
+                  <Link to="/forgot-password" className="font-medium text-orange-600 hover:text-orange-500">
                     Forgot password?
                   </Link>
                 </div>
@@ -118,7 +118,7 @@ const Login = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className="cursor-pointer w-full bg-pink-600 text-white py-2 px-4 rounded-md hover:bg-pink-700 transition duration-200 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 disabled:opacity-70"
+                className="cursor-pointer w-full bg-orange-600 text-white py-2 px-4 rounded-md hover:bg-orange-700 transition duration-200 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 disabled:opacity-70"
               >
                 {loading ? (
                   <span className="flex items-center justify-center">
@@ -133,9 +133,9 @@ const Login = () => {
             </form>
 
             <div className="mt-8 text-center">
-              <p className="text-sm text-pink-700">
+              <p className="text-sm text-orange-700">
                 Don't have an account?{' '}
-                <Link to="/signup" className="font-medium text-pink-600 hover:text-pink-500">
+                <Link to="/signup" className="font-medium text-orange-600 hover:text-orange-500">
                   Sign up
                 </Link>
               </p>

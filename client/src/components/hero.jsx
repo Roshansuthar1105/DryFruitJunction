@@ -11,7 +11,7 @@ export default function Hero() {
           <div className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                <span className="bg-gradient-to-r from-pink-600 to-pink-800 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-orange-600 to-orange-800 bg-clip-text text-transparent">
                   Handcrafted
                 </span>
                 <br />
@@ -26,20 +26,20 @@ export default function Hero() {
             {/* Features */}
             <div className="flex flex-wrap gap-6">
               <div className="flex items-center space-x-2">
-                <div className="bg-pink-100 p-2 rounded-full">
-                  <Award className="h-5 w-5 text-pink-600" />
+                <div className="bg-orange-100 p-2 rounded-full">
+                  <Award className="h-5 w-5 text-orange-600" />
                 </div>
                 <span className="text-gray-700 font-medium">Premium Quality</span>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="bg-pink-100 p-2 rounded-full">
-                  <Star className="h-5 w-5 text-pink-600" />
+                <div className="bg-orange-100 p-2 rounded-full">
+                  <Star className="h-5 w-5 text-orange-600" />
                 </div>
                 <span className="text-gray-700 font-medium">100% Natural</span>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="bg-pink-100 p-2 rounded-full">
-                  <Clock className="h-5 w-5 text-pink-600" />
+                <div className="bg-orange-100 p-2 rounded-full">
+                  <Clock className="h-5 w-5 text-orange-600" />
                 </div>
                 <span className="text-gray-700 font-medium">Made Fresh</span>
               </div>
@@ -47,10 +47,10 @@ export default function Hero() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/products" className="bg-gradient-to-r from-pink-500 to-pink-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
+              <Link to="/products" className="bg-gradient-to-r from-orange-500 to-orange-700 text-white px-8 py-4 rounded-full text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
                 Shop Our Sweets
               </Link>
-              <Link to="/about" className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-pink-500 hover:text-pink-600 transition-all duration-300 text-center">
+              <Link to="/about" className="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-full text-lg font-semibold hover:border-orange-500 hover:text-orange-600 transition-all duration-300 text-center">
                 Our Story
               </Link>
             </div>
@@ -70,8 +70,8 @@ export default function Hero() {
             </div> */}
             <TestimonialCarousel/>
             {/* Decorative elements */}
-            <div className="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-r from-pink-200 to-pink-300 rounded-full opacity-20 blur-3xl"></div>
-            <div className="absolute -bottom-8 -left-8 w-64 h-64 bg-gradient-to-r from-pink-100 to-pink-200 rounded-full opacity-20 blur-3xl"></div>
+            <div className="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-r from-orange-200 to-orange-300 rounded-full opacity-20 blur-3xl"></div>
+            <div className="absolute -bottom-8 -left-8 w-64 h-64 bg-gradient-to-r from-orange-100 to-orange-200 rounded-full opacity-20 blur-3xl"></div>
           </div>
         </div>
       </div>

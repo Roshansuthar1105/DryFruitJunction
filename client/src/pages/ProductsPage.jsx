@@ -97,12 +97,12 @@ export default function ProductsPage() {
   }
 
   return (
-    <section className="py-12 bg-gradient-to-br from-pink-50 to-orange-50 min-h-screen">
+    <section className="py-12 bg-gradient-to-br from-orange-50 to-orange-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
-            Our <span className="bg-gradient-to-r from-pink-600 to-orange-600 bg-clip-text text-transparent">Sweet Collection</span>
+            Our <span className="bg-gradient-to-r from-orange-600 to-orange-600 bg-clip-text text-transparent">Sweet Collection</span>
           </h2>
           <p className="text-xl text-gray-600">
             {products.length} {products.length === 1 ? 'product' : 'products'} found
@@ -119,7 +119,7 @@ export default function ProductsPage() {
               <input
                 type="text"
                 placeholder="Search products..."
-                className="pl-10 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"
+                className="pl-10 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
@@ -131,7 +131,7 @@ export default function ProductsPage() {
               </label>
               <select
                 id="sort"
-                className="border border-gray-300 rounded-lg px-3 py-2 focus:ring-pink-500 focus:border-pink-500"
+                className="border border-gray-300 rounded-lg px-3 py-2 focus:ring-orange-500 focus:border-orange-500"
                 value={sortOption}
                 onChange={(e) => setSortOption(e.target.value)}
               >
@@ -145,7 +145,7 @@ export default function ProductsPage() {
   
             <button
               onClick={() => setShowFilters(!showFilters)}
-              className="flex items-center justify-end space-x-2 px-4 py-2 bg-pink-50 text-pink-600 rounded-lg hover:bg-pink-100 transition-colors"
+              className="flex items-center justify-end space-x-2 px-4 py-2 bg-orange-50 text-orange-600 rounded-lg hover:bg-orange-100 transition-colors"
             >
               <Filter className="h-5 w-5" />
               <span>Filters</span>
@@ -234,7 +234,7 @@ export default function ProductsPage() {
             <p className="mt-2 text-gray-500">Try adjusting your search or filter criteria</p>
             <button
               onClick={resetFilters}
-              className="cursor-pointer mt-6 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-pink-600 hover:bg-pink-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-500"
+              className="cursor-pointer mt-6 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-orange-600 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
             >
               Reset Filters
             </button>

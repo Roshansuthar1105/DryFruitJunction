@@ -216,7 +216,7 @@ export default function ProductsPage() {
               setSelectedProduct(null);
               setIsFormOpen(true);
             }}
-            className="cursor-pointer flex items-center justify-center gap-2 bg-gradient-to-r from-pink-600 to-orange-600 hover:from-pink-700 hover:to-orange-700 text-white px-4 py-2.5 rounded-lg shadow-sm transition-all"
+            className="cursor-pointer flex items-center justify-center gap-2 bg-gradient-to-r from-orange-600 to-orange-600 hover:from-orange-700 hover:to-orange-700 text-white px-4 py-2.5 rounded-lg shadow-sm transition-all"
           >
             <Plus className="h-4 w-4" />
             <span>Add Product</span>

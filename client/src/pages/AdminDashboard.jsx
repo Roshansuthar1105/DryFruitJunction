@@ -152,13 +152,13 @@ export default function AdminDashboard() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-pink-50 to-orange-50 min-h-screen">
+    <section className="py-20 bg-gradient-to-br from-orange-50 to-orange-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-4 gap-8">
           {/* Sidebar */}
           <div className="bg-white/90 backdrop-blur-lg border border-gray-200 rounded-2xl shadow-md p-6 h-fit sticky top-6 transition-all">
             <div className="flex items-center space-x-4 mb-8">
-              <div className="bg-gradient-to-r from-purple-500 to-pink-500 w-12 h-12 rounded-full flex items-center justify-center">
+              <div className="bg-gradient-to-r from-purple-500 to-orange-500 w-12 h-12 rounded-full flex items-center justify-center">
                 <Settings className="h-6 w-6 text-white" />
               </div>
               <div>

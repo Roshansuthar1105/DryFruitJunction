@@ -32,8 +32,8 @@ const VisitorCounter = ({ location = 'footer' }) => {
 
   const baseStyles =
     location === 'footer'
-      ? 'bg-gradient-to-r from-pink-500 to-rose-500 text-white text-sm px-4 py-1 rounded-full shadow-md border border-white/20'
-      : 'text-white bg-pink-600 px-3 py-1 rounded-full';
+      ? 'bg-gradient-to-r from-orange-500 to-rose-500 text-white text-sm px-4 py-1 rounded-full shadow-md border border-white/20'
+      : 'text-white bg-orange-600 px-3 py-1 rounded-full';
 
   return (
     <div className={baseStyles}>

@@ -47,11 +47,11 @@ export default function DeliveryDashboard() {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-pink-50 to-orange-50 min-h-screen">
+    <section className="py-20 bg-gradient-to-br from-orange-50 to-orange-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
-            Delivery <span className="bg-gradient-to-r from-pink-600 to-orange-600 bg-clip-text text-transparent">Dashboard</span>
+            Delivery <span className="bg-gradient-to-r from-orange-600 to-orange-600 bg-clip-text text-transparent">Dashboard</span>
           </h2>
           <p className="text-xl text-gray-600">Manage your delivery assignments</p>
         </div>

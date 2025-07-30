@@ -8,7 +8,7 @@ export default function About() {
   const [showBrandStory, setShowBrandStory] = useState(false);
 
   return (
-    <section className="py-20 bg-gradient-to-br from-pink-50 to-pink-100">
+    <section className="py-20 bg-gradient-to-br from-orange-50 to-orange-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {showBrandStory && <BrandStory onClose={() => setShowBrandStory(false)} />}
         
@@ -18,7 +18,7 @@ export default function About() {
             <div className="space-y-4">
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-800">
                 Our Sweet{" "}
-                <span className="bg-gradient-to-r from-pink-600 to-pink-800 bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-orange-600 to-orange-800 bg-clip-text text-transparent">
                   Revolution
                 </span>
               </h2>
@@ -31,7 +31,7 @@ export default function About() {
               
               <button
                 onClick={() => setShowBrandStory(true)}
-                className="mt-4 cursor-pointer bg-gradient-to-r from-pink-500 to-pink-700 text-white px-6 py-3 rounded-full text-md font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                className="mt-4 cursor-pointer bg-gradient-to-r from-orange-500 to-orange-700 text-white px-6 py-3 rounded-full text-md font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
               >
                 Read Our Full Story
               </button>
@@ -40,15 +40,15 @@ export default function About() {
             {/* Stats */}
             {/* <div className="grid grid-cols-2 gap-6">
               <div className="text-center p-6 bg-white rounded-2xl shadow-lg">
-                <div className="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="h-8 w-8 text-pink-600" />
+                <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="h-8 w-8 text-orange-600" />
                 </div>
                 <div className="text-3xl font-bold text-gray-800 mb-2">10,000+</div>
                 <div className="text-gray-600">Happy Customers</div>
               </div>
               <div className="text-center p-6 bg-white rounded-2xl shadow-lg">
-                <div className="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Award className="h-8 w-8 text-pink-600" />
+                <div className="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="h-8 w-8 text-orange-600" />
                 </div>
                 <div className="text-3xl font-bold text-gray-800 mb-2">25+</div>
                 <div className="text-gray-600">Awards Won</div>
@@ -67,8 +67,8 @@ export default function About() {
               />
             </div>
             {/* Decorative elements */}
-            <div className="absolute -top-6 -right-6 w-32 h-32 bg-gradient-to-r from-pink-200 to-pink-300 rounded-full opacity-30"></div>
-            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-gradient-to-r from-pink-100 to-pink-200 rounded-full opacity-30"></div>
+            <div className="absolute -top-6 -right-6 w-32 h-32 bg-gradient-to-r from-orange-200 to-orange-300 rounded-full opacity-30"></div>
+            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-gradient-to-r from-orange-100 to-orange-200 rounded-full opacity-30"></div>
           </div>
         </div>
 
@@ -77,8 +77,8 @@ export default function About() {
           <h3 className="text-3xl font-bold text-center text-gray-800 mb-12">Our Values</h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center p-8 bg-white rounded-2xl shadow-lg">
-              <div className="bg-pink-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Heart className="h-10 w-10 text-pink-600" />
+              <div className="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Heart className="h-10 w-10 text-orange-600" />
               </div>
               <h4 className="text-xl font-bold text-gray-800 mb-4">Made with Love</h4>
               <p className="text-gray-600">
@@ -86,8 +86,8 @@ export default function About() {
               </p>
             </div>
             <div className="text-center p-8 bg-white rounded-2xl shadow-lg">
-              <div className="bg-pink-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Award className="h-10 w-10 text-pink-600" />
+              <div className="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Award className="h-10 w-10 text-orange-600" />
               </div>
               <h4 className="text-xl font-bold text-gray-800 mb-4">Premium Quality</h4>
               <p className="text-gray-600">
@@ -95,8 +95,8 @@ export default function About() {
               </p>
             </div>
             <div className="text-center p-8 bg-white rounded-2xl shadow-lg">
-              <div className="bg-pink-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Clock className="h-10 w-10 text-pink-600" />
+              <div className="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Clock className="h-10 w-10 text-orange-600" />
               </div>
               <h4 className="text-xl font-bold text-gray-800 mb-4">Fresh Daily</h4>
               <p className="text-gray-600">

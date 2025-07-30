@@ -78,7 +78,6 @@ export default function CheckoutPage() {
       if (response.status === 201) {
         toast.success("Order Conformed");
         setOrderData(response.data); // Save full response
-        console.log(response.data); // Save full response
         setOrderSuccess(true);
         clearCart();
       }
@@ -140,7 +139,7 @@ export default function CheckoutPage() {
   if (orderSuccess) {
     return (<>
       {orderSuccess && orderData && (
-        <section className="py-20 bg-gradient-to-br from-pink-50 to-orange-50 min-h-screen">
+        <section className="py-20 bg-gradient-to-br from-orange-50 to-orange-50 min-h-screen">
           <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="bg-white rounded-2xl shadow-lg p-8">
               <div className="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -160,7 +159,7 @@ export default function CheckoutPage() {
               </p>
               <Link
                 to="/dashboard"
-                className="inline-block bg-gradient-to-r from-pink-500 to-orange-500 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:shadow-xl transition-all duration-300"
+                className="inline-block bg-gradient-to-r from-orange-500 to-orange-500 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:shadow-xl transition-all duration-300"
               >
                 View Order Details
               </Link>
@@ -171,7 +170,7 @@ export default function CheckoutPage() {
     </>)
 
     return (
-      <section className="py-20 bg-gradient-to-br from-pink-50 to-orange-50 min-h-screen">
+      <section className="py-20 bg-gradient-to-br from-orange-50 to-orange-50 min-h-screen">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-white rounded-2xl shadow-lg p-8">
             <div className="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -188,7 +187,7 @@ export default function CheckoutPage() {
             </p>
             <Link
               to="/dashboard"
-              className="inline-block bg-gradient-to-r from-pink-500 to-orange-500 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:shadow-xl transition-all duration-300"
+              className="inline-block bg-gradient-to-r from-orange-500 to-orange-500 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:shadow-xl transition-all duration-300"
             >
               View Order Details
             </Link>
@@ -199,7 +198,7 @@ export default function CheckoutPage() {
   }
 
   return (
-    <section className="py-20 bg-gradient-to-br from-pink-50 to-orange-50 min-h-screen">
+    <section className="py-20 bg-gradient-to-br from-orange-50 to-orange-50 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
@@ -222,7 +221,7 @@ export default function CheckoutPage() {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
                   required
                 />
               </div>
@@ -237,7 +236,7 @@ export default function CheckoutPage() {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
                   required
                 />
               </div>
@@ -252,7 +251,7 @@ export default function CheckoutPage() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
                   required
                 />
               </div>
@@ -268,7 +267,7 @@ export default function CheckoutPage() {
                   maxLength={6}
                   minLength={6}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
                   required
                 />
               </div>
@@ -282,7 +281,7 @@ export default function CheckoutPage() {
                   name="city"
                   value={formData.city}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
                   required
                 />
               </div>
@@ -297,7 +296,7 @@ export default function CheckoutPage() {
                     name="address"
                     value={formData.address}
                     onChange={handleChange}
-                    className="flex-1 px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200"
+                    className="flex-1 px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
                     required
                   />
                   {/* <button
@@ -324,7 +323,7 @@ export default function CheckoutPage() {
                   rows={3}
                   value={formData.notes}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
                   placeholder="Special instructions, allergies, etc."
                 ></textarea>
               </div>
@@ -340,7 +339,7 @@ export default function CheckoutPage() {
                       value="cod"
                       checked={formData.paymentMethod === 'cod'}
                       onChange={handleChange}
-                      className="h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300"
+                      className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300"
                     />
                     <label htmlFor="cod" className="ml-3 block text-sm font-medium text-gray-700 cursor-pointer">
                       Cash on Delivery
@@ -354,7 +353,7 @@ export default function CheckoutPage() {
                       value="online"
                       checked={formData.paymentMethod === 'online'}
                       onChange={handleChange}
-                      className="h-4 w-4 text-pink-600 focus:ring-pink-500 border-gray-300"
+                      className="h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300"
                       disabled
                     />
                     <label htmlFor="online" className="ml-3 block text-sm font-medium text-gray-500 cursor-pointer">
@@ -367,7 +366,7 @@ export default function CheckoutPage() {
               <button
                 type="submit"
                 disabled={isSubmitting || cart.length === 0}
-                className="cursor-pointer w-full bg-gradient-to-r from-pink-500 to-orange-500 text-white py-4 rounded-xl text-lg font-semibold hover:shadow-xl transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center"
+                className="cursor-pointer w-full bg-gradient-to-r from-orange-500 to-orange-500 text-white py-4 rounded-xl text-lg font-semibold hover:shadow-xl transition-all duration-300 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center"
               >
                 {isSubmitting ? (
                   <>

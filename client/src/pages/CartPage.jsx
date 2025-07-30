@@ -9,7 +9,7 @@ export default function CartPage() {
   const { user } = useAuth();
 
   return (
-    <div className="min-h-screen py-12 bg-gradient-to-br from-pink-50 to-orange-50">
+    <div className="min-h-screen py-12 bg-gradient-to-br from-orange-50 to-orange-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-bold text-gray-800 mb-8">Your Cart ({cartCount})</h1>
 
@@ -19,7 +19,7 @@ export default function CartPage() {
             <h2 className="mt-4 text-xl font-medium text-gray-900">Your cart is empty</h2>
             <Link
               to="/products"
-              className="cursor-pointer mt-6 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-pink-600 hover:bg-pink-700"
+              className="cursor-pointer mt-6 inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-orange-600 hover:bg-orange-700"
             >
               Continue Shopping
             </Link>
@@ -51,21 +51,21 @@ export default function CartPage() {
                       </p>
                     )}
 
-                    <p className="text-lg font-bold text-pink-600 mt-2">
+                    <p className="text-lg font-bold text-orange-600 mt-2">
                       ₹{(item.price * item.quantity).toFixed(2)}
                     </p>
 
                     <div className="flex items-center mt-4 border border-gray-300 rounded-full w-fit">
                       <button
                         onClick={() => updateQuantity(item._id, item.variantId, item.quantity - 1)}
-                        className="cursor-pointer px-3 py-1 text-gray-600 hover:text-pink-600"
+                        className="cursor-pointer px-3 py-1 text-gray-600 hover:text-orange-600"
                       >
                         <Minus className="h-4 w-4" />
                       </button>
                       <span className="px-3 py-1">{item.quantity}</span>
                       <button
                         onClick={() => updateQuantity(item._id, item.variantId, item.quantity + 1)}
-                        className="cursor-pointer px-3 py-1 text-gray-600 hover:text-pink-600"
+                        className="cursor-pointer px-3 py-1 text-gray-600 hover:text-orange-600"
                       >
                         <Plus className="h-4 w-4" />
                       </button>
@@ -88,12 +88,12 @@ export default function CartPage() {
                 </div>
                 <div className="border-t border-gray-200 pt-4 flex justify-between">
                   <span className="font-bold text-gray-800">Total</span>
-                  <span className="font-bold text-pink-600">₹{cartTotal.toFixed(2)}</span>
+                  <span className="font-bold text-orange-600">₹{cartTotal.toFixed(2)}</span>
                 </div>
               </div>
               <Link
                 to={user ? "/checkout" : "/login"}
-                className="cursor-pointer mt-6 w-full bg-gradient-to-r from-pink-500 to-orange-500 text-white px-6 py-3 rounded-full font-medium hover:shadow-lg transition-all duration-300 flex items-center justify-center"
+                className="cursor-pointer mt-6 w-full bg-gradient-to-r from-orange-500 to-orange-500 text-white px-6 py-3 rounded-full font-medium hover:shadow-lg transition-all duration-300 flex items-center justify-center"
               >
                 Proceed to Checkout
               </Link>

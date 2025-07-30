@@ -64,7 +64,7 @@ export default function Contact() {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
             Contact{" "}
-            <span className="bg-gradient-to-r from-pink-600 to-pink-800 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-orange-600 to-orange-800 bg-clip-text text-transparent">
               DryFruit Junction
             </span>
           </h2>
@@ -78,8 +78,8 @@ export default function Contact() {
           <div className="space-y-8">
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <div className="bg-pink-100 p-3 rounded-full">
-                  <MapPin className="h-6 w-6 text-pink-600" />
+                <div className="bg-orange-100 p-3 rounded-full">
+                  <MapPin className="h-6 w-6 text-orange-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-gray-800 mb-2">Our Office</h3>
@@ -152,7 +152,7 @@ export default function Contact() {
             </div>
           </div>
           {/* Contact Form */}
-          <div className="bg-gradient-to-br from-pink-50/20 to-orange-50/20 p-8 rounded-3xl">
+          <div className="bg-gradient-to-br from-orange-50/20 to-orange-50/20 p-8 rounded-3xl">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">Send Us a Message</h3>
 
             {submitSuccess ? (
@@ -164,7 +164,7 @@ export default function Contact() {
                 </p>
                 <button
                   onClick={() => setSubmitSuccess(false)}
-                  className="mt-4 cursor-pointer text-pink-600 hover:text-pink-800 font-medium"
+                  className="mt-4 cursor-pointer text-orange-600 hover:text-orange-800 font-medium"
                 >
                   Send another message
                 </button>
@@ -188,7 +188,7 @@ export default function Contact() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
                       placeholder="Your name"
                       disabled={user?.firstName}
                       required
@@ -204,7 +204,7 @@ export default function Contact() {
                       name="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
                       placeholder="your.email@example.com"
                       required
                       disabled={user?.email}
@@ -221,7 +221,7 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
                     placeholder="Ex. 9876543210"
                     required
                     disabled={user?.phone}
@@ -237,7 +237,7 @@ export default function Contact() {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="cursor-pointer w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200"
+                    className="cursor-pointer w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200"
                   >
                     <option className='cursor-pointer' value="general">General Inquiry</option>
                     <option className='cursor-pointer' value="custom-order">Custom Order</option>
@@ -256,7 +256,7 @@ export default function Contact() {
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all duration-200 resize-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-200 resize-none"
                     placeholder="Tell us about your sweet needs..."
                     required
                   ></textarea>
@@ -265,7 +265,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full cursor-pointer bg-gradient-to-r from-pink-500 to-orange-500 text-white py-4 rounded-xl text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 disabled:opacity-70"
+                  className="w-full cursor-pointer bg-gradient-to-r from-orange-500 to-orange-500 text-white py-4 rounded-xl text-lg font-semibold hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 disabled:opacity-70"
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message'}
                 </button>
