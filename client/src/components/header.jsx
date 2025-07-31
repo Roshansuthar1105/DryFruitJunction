@@ -17,14 +17,15 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-4">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-              <img src="/logo.png" alt="Logo" width={40} height={40} />
+          <Link to="/" className="flex items-center space-x-2  ">
+              <img src="/logo.png" alt="Logo" width={50} height={50} />
+              <img src="/logo-2.png" alt="Logo" width={100} height={40} />
             {/* <div className="bg-gradient-to-r from-orange-500 to-orange-500 p-2 rounded-full">
               <Heart className="h-6 w-6 text-white" />
             </div> */}
-            <span className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-orange-600 bg-clip-text text-transparent">
+            {/* <span className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-orange-600 bg-clip-text text-transparent">
               DryFruit Junction
-            </span>
+            </span> */}
           </Link>
 
           {/* Desktop Navigation */}
