@@ -10,24 +10,25 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <Link to="/" className="flex items-center space-x-2">
-              <img src="/logo.png" alt="Logo" width={40} height={40} />
+            <Link to="/" className="flex items-center space-x-2 bg-gradient-to-r  from-orange-50 to-orange-200 justify-center p-2 rounded-md">
+              <img src="/logo.png" alt="Logo" className="h-12 w-12" />
+              <img src="/logo-2.png" alt="Logo" className="h-12" />
               {/* <div className="bg-gradient-to-r from-orange-500 to-orange-700 p-2 rounded-full">
                 <Heart className="h-6 w-6 text-white" />
               </div> */}
 
-              <span className="text-2xl font-bold bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+              {/* <span className="text-2xl font-bold bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
                 DryFruit Junction
-              </span>
+              </span> */}
             </Link>
             <p className="text-gray-400 leading-relaxed">
               Crafting exceptional dry fruit sweets with love and tradition from the heart of Rajasthan.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-orange-600 transition-colors">
+              <a href="https://www.facebook.com/share/1J7u7abYzX/" target="_blank" className="bg-gray-800 p-2 rounded-full hover:bg-orange-600 transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-orange-600 transition-colors">
+              <a href="https://www.instagram.com/dryfruitsweets/" target="_blank" className="bg-gray-800 p-2 rounded-full hover:bg-orange-600 transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
               <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-orange-600 transition-colors">
