@@ -10,9 +10,9 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <Link to="/" className="flex items-center space-x-2 bg-gradient-to-r  from-orange-50 to-orange-200 justify-center p-2 rounded-md">
-              <img src="/logo-1.png" alt="Logo" className="h-12 w-12" />
-              <img src="/logo-2.png" alt="Logo" className="h-12" />
+            <Link to="/" className="flex items-center space-x-2">
+              {/* <img src="/logo-1.png" alt="Logo" className="h-12 w-12" /> */}
+              <img src="/logo-2-light.png" alt="Logo" className="h-16" />
               {/* <div className="bg-gradient-to-r from-orange-500 to-orange-700 p-2 rounded-full">
                 <Heart className="h-6 w-6 text-white" />
               </div> */}
