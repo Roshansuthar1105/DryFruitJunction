@@ -264,7 +264,7 @@ const ProductPage = () => {
                     +
                   </button>
                 </div>
-                <span
+                {/* <span
                   className={`text-sm font-medium ${product.stock > 0 ? 'text-green-600' : 'text-red-600'
                     }`}
                 >
@@ -277,7 +277,7 @@ const ProductPage = () => {
                       <span className="text-yellow-600"> • Low stock</span>
                     )}
                   </span>
-                </span>
+                </span> */}
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
