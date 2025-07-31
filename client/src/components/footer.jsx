@@ -16,10 +16,6 @@ export default function Footer() {
               {/* <div className="bg-gradient-to-r from-orange-500 to-orange-700 p-2 rounded-full">
                 <Heart className="h-6 w-6 text-white" />
               </div> */}
-
-              {/* <span className="text-2xl font-bold bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
-                DryFruit Junction
-              </span> */}
             </Link>
             <p className="text-gray-400 leading-relaxed">
               Crafting exceptional dry fruit sweets with love and tradition from the heart of Rajasthan.
